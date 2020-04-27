@@ -1,0 +1,80 @@
+body 
+{
+    background: yellow;
+}
+
+div
+{
+    font-size: 30px;
+    position: relative;
+    animation-name: div;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.red 
+{
+    color: red;
+}
+.lg 
+{
+    font-size: 40px;
+}
+h1 
+{
+    color: red;
+    text-align: center;
+}
+h2 
+{
+    color: blue;
+    font-style: italic;
+}
+h2, h3 
+{
+    text-align: right;
+}
+h3 
+{
+    color: red;
+}
+p::first-letter 
+{
+    color: #000000;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+table 
+{
+    animation: change 10s forwards;
+}
+th, td
+{
+    padding: 15px;
+    text-align: center;
+    animation-name: color-change;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+tr :first-child 
+{
+    font-weight: bold;    
+}
+@keyframes div
+{
+    from{left: 0px;}
+    to {left: 800px;}
+}
+@keyframes change
+{
+    /*When using animation duration, you can use from and to. You can also use 0%-100% to add more variations in between the duration*/
+    from {background-color: cyan;}
+    to {background-color: green;}
+}
+@keyframes color-change
+{
+    from{color: black;}
+    to{color: white;}
+}

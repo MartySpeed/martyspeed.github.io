@@ -1,0 +1,39 @@
+*{
+    border: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    min-width: 860px;
+}
+
+.header, .footer{
+    grid-column: 1/4;
+    background: #98FF98;
+    color:blue;
+    text-align: center;
+    
+}
+
+.menu{
+    width: 200px;
+    color: maroon;
+    background: #fff;
+}
+
+.content{
+    grid-column: 2/4;
+    background: #fff;
+    color: maroon
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    padding: .5em;
+}

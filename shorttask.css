@@ -5,7 +5,7 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-gap: 10px;
     min-width: 860px;
 }
@@ -19,13 +19,11 @@
 }
 
 .menu{
-    width: 200px;
     color: maroon;
     background: #fff;
 }
 
 .content{
-    grid-column: 2/4;
     background: #fff;
     color: maroon
 }

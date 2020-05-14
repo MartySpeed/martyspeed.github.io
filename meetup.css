@@ -1,28 +1,110 @@
 *{
     border: 0;
     margin:0;
-    background: white;
-}
-
-ul{
-    color: white;
-}
-
-h1{
-    color: plum;
-    text-align: center;
     background: black;
-    font-size: 3em;
+    color: powderblue;
 }
-
-p{
-    color: green;
-    font-size: 1.5em;
+/*ID's*/
+html, body {
+    min-height: 100%;
 }
-
-footer{
-    color: plum;
+#container {
+    min-height: 100%;
+}
+#main {
+    overflow: auto;     /*when website overflows, will give you the scrollbar*/
+    padding-bottom: 100px;
+}
+#image{
+    grid-column: 2/3;
+    margin: 50px 0 0 0;
+}
+#foot {
+    height: 100px;
+    margin-top: 300px;
+    clear: both;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+/*CLASSES*/
+/*CONTAINER*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*title*/
+.title {
+    margin: 10px;
+    padding: 10px;
+    grid-column: 1/5;
+    font-size: 2em;
     text-align: left;
-    background: black;
-    font-size: 1em;
+    
+    background: orange;
+}
+/*header1*/
+/*menu*/
+.menu {
+    margin: 10px;
+    padding: 10px;
+    grid-column: 1/5;
+    font-size: 1.5em;
+    text-align: left;
+    background-color: pink;
+}
+/*content1*/
+.content1 {
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2/4;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: brown;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image image";*/
+}
+/*content2*/
+.content2 {
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2/4;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: brown;
+}
+/*content3*/
+.content3 {
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2/4;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: brown;
+}
+/*content4*/
+.content4 {
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2/4;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: brown;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+/*footer1*/
+.footer {
+    grid-column: 1/5;
+    font-size: 1.1em;
+    text-align: center;
+    color: black;
+    background: orangered;
+}
+.none, li {
+    list-style: none;
+    display: inline;
 }

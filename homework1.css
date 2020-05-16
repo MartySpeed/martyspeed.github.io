@@ -66,6 +66,7 @@ html, body {
 .ptop {
     padding: 15px;
     font-size: 20px;
+    font-family: 'Pangolin', cursive;
     line-height: 20px;
     background: black;
     border-top-right-radius: 1em;
@@ -73,6 +74,7 @@ html, body {
 }
 .paragraph {
     padding: 15px;
+    font-family: 'Pangolin', cursive;
     font-size: 20px;
     line-height: 20px;
     background: black;
@@ -80,6 +82,7 @@ html, body {
 .pbot {
     padding: 15px;
     font-size: 20px;
+    font-family: 'Pangolin', cursive;
     line-height: 20px;
     background: black;
     border-bottom-right-radius: 1em;

@@ -28,14 +28,14 @@ html, body {
 /*classes for divs*/
 .title {
     /*css grid style*/
-    grid-column: 1/2;
+    grid-column: 1/4;
     text-align: left;
     font-size: 2em;
     background-image: linear-gradient(to right, green, grey);
 }
 .menu {
-    grid-column: 2/4;
-    text-align: right;
+    grid-column: 1/4;
+    text-align: left;
     font-size: 1.5em;
     color: whitesmoke;
 }

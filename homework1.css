@@ -6,22 +6,18 @@
 html, body {
     min-height: 100%;
 }
-
 #container {
     min-height: 100%;
 }
-
 #main {
     overflow: auto;     /*when website overflows, will give you the scrollbar*/
     padding-bottom: 100px;
 }
-
 #foot {
     height: 100px;
     margin-top: 300px;;
     clear: both;
 }
-
 /*grid class for div element container*/
 .grid {
     /*tells the page we want we a grid*/
@@ -67,6 +63,28 @@ html, body {
     color: #FFD700;
     font-size: 1.1em; 
 }
+.ptop {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    background: black;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;;
+}
+.paragraph {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    background: black;
+}
+.pbot {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    background: black;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
 .footer {
     grid-column: 1/4;
     font-size: 1.1em;
@@ -77,21 +95,3 @@ html, body {
     list-style: none;
     display: inline;
 }
-/*setup for wen responziveness on a cell phone*/
-/*@media screen and (min-width) 
-{
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 500px 500px 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        ". title title ."
-        ". menu menu ."
-        ". header1 header1 ."
-        ". p1 p1 ."
-        ". header2 header2 ."
-        ". p2 p2 ."
-        ". footer footer .";
-    }
-
-}*/

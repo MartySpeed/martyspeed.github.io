@@ -1,20 +1,38 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<!--
-    John Anthony 20200215
--->
-
-<html>
     <head>
+        <title>Contacts | Final Project</title>
         <meta charset="utf-8">
-        <meta name="description" content="Here are some of the best methods to reach me">
-        <title>Contact</title>    
-    </head>    
-    <body>    
-        
-    <h1>John Anthony - CNIT 132</h1>
-        <ul>
-            <li><a href="homework1.html">Homework 1</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="meetup.html">Meetup</a></li>
-        </ul>
+        <meta name="description" content="How to contact John Anthony through email.">
+        <link rel="stylesheet" href="contact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="menu">
+            <ul class="none">                    
+                <li><a href="assignments.html">Assignments</a></li>&nbsp; &nbsp;
+                <li><a href="meetup.html">Meetup</a></li>&nbsp; &nbsp;
+            </ul>
+        </div>
+
+       <div class="grid">
+           <form>
+               <input type="text" placeholder="Insert full name">
+
+              <input type="text" name="email" placeholder="Insert your email">
+    
+              <textarea name="message" placeholder="leave a message here."></textarea>
+    
+              <input type="submit" name="sumbit">
+          </form>
+       </div>
+
+       <div class="footer" id="foot">
+        John Anthony &copy; email: jantho14@ccsf.mail.edu
+    </div>
+       
+    </body>
+
+</html>

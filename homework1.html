@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 
-<!--
-    John Anthony 20200215
--->
-
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="description" content="This is the homepage for class work done and tested before being completed.">
-        <title>Homework</title>    
-    </head>    
-    <body>    
-        
-    <h1>John Anthony - CNIT 132</h1>
-        <ul>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="meetup.html">Meetup</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <img src="jant.jpg" alt="John Anthony" style="width: 150px;height: 150px;">
-        
-        <h2>About Myself</h2>
-        <p>
-            My name is John Anthony. I am a Computer Science Major with an interest in front-end development,<br>
-            back-end development, network engineering and cyber-security. I am still deiciding if I should follow<br>
-            one path or all of them. I am an Air Force Veteren, I was an aircraft mechanic or heavy aircraft and<br>
-            tanker aircraft. I like to code and make mods and game in my free time and that is how I got to the<br>
-            door step of Web development and more. I enjoy coding, not just games, but websites, raspberry pi &amp;<br>
-            Python automation trial and error and more. It is noth fun and challenging to have endless possibilities<br>
-            that can be built in HTML and more.
-        </p>
-        
-        <p>
-            I am still figuring out my path in web development. Through the many classes that I have started in this<br>
-            field. I am starting to play more in HTML and web development. I am not sure what allis behind this field<br>
-            yet, but I am dedicating time to figure that out. I enjoy making my own websites, an recreating some<br>
-            features in other websites to use in my own test to create something new. Playing with the many different<br>
-            features of HTML. I look forward to learning more throughout this course.
-        </p>
-        
-        <p>
-            One of my favorite websites is <a href="https://deadcells.com/" target="_blank" rel=" noopener noreferrer">Dead Cells</a>. I like this site because it is one of my favorite games to play,<br>
-            aside from that, the visual layout of their website is amazing to me. It has the style that I like with the video<br> at the center of the home page. Placing their GIF's and video clips in a neat order fits my own style for<br>
-            building a web portfolio for showing off your work and personal projects. The coloring in the background<br> of the webpage to match their aesthetic as well as how quick you can access all information for the site. It<br>
-            definitely falls under the hierarchal design for being too shallow, but it<br> fits the growth of the game since it was released in 2018.
-        </p>
-        
-        <p>
-            The <a href="http://www.ccsf.edu/en/student-services/student-counseling.html#wrap-subcontent" target="_blank" rel=" noopener noreferrer">Student Counseling</a> services offered at CCSF have helped me with classes that I should be considering<br>
-            or taking for my career path. They assist in my career development with subjects or practices that best suit<br> me, as well as helping through any hardships that I may be going through. I have been helped by the CCSF<br>
-            counseling in the metaphyscial &amp; physical areas in life. Driving, setting up schedules and one-on-one sit<br> downs with intructors. To the day to day toll that some students go through to help them stay on track when<br>
-            everything else becomes a distraction.
-        </p>
-        <hr>
-        
-        <h2>Good Links</h2>            
-            <ul>
-                <li><a href="https://tiny-helpers.dev/" target="_blank" rel=" noopener noreferrer">Tiny Helpers</a></li>
-                <li>This website opened my eyes to focus on mini, individualized porjects for a website, good for testing.</li>
-                <li><a href="https://www.reddit.com/" target="_blank" rel=" noopner noreferrer">Reddit</a></li>
-                <li>This website has helped to host the most amount of information found by a community of digital individuals helping to find better questions for the solutions I am looking for.</li>
-                <li><a href="https://www.youtube.com/" target="_blank" rel=" noopener noreferrer">Youtube</a></li>
-                <li>YouTube has visual guides for those that need help in web development. This helps you visually watch or publish your own or anyone elses content.</li>
-            </ul>        
+        <title>Homework 1 | Final Project</title>     <!--sets the title for the webpage in the tab-->
+        <meta charset="utf-8">     
+        <meta name="description" content="Homework 1 revisions with the skills gained throughout the class">     <!--description tag for search engines.-->
+        <link rel="stylesheet" href="homework1.css">     <!--tag to css sheets-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     <!--What does this tag do?-->
+    </head>
+    
+    <body>
+        <div class="grid" id="container">
+            
+            <!--the title will be aligned left of the menu at the top of the page-->
+            <div class="title">John Anthony &nbsp; &nbsp;CNIT 132 Final Project</div>            
+            
+            <!--Horizontal menu to be aligned right, sharing space with the title at the top of the page-->       
+            <div class="menu">
+                <ul class="none">                    
+                    <li><a href="assignments.html">Assignments</a></li>&nbsp; &nbsp;
+                    <li><a href="meetup.html">Meetup</a></li>&nbsp; &nbsp;
+                </ul>
+            </div>
+            
+            <!--content1 holds the checklist for what needs to be done-->
+            <div class="content1" id="main">
+                
+                <h1 class="header1">This is where I check things off of the list once completed.</h1>
+
+                <!--list of changes that need to be applied for the webpage-->
+                <p>
+                    1. the link for the meetup page needs to be ready to work as the meetup report will have the same due dates as the final project<br>
+                    2. the assignments page, and the contacts page will need to have the same menu and layout of the first page.<br>
+                    3. you will need to create a favicon to include in your page, to be your logo.<br>
+                    4. if your use the techniques of RWD (responsive web design) to create a mobile version for your site: homework1, assignments, and contacts need to be
+                        responsive. the page should shown in a single column having the heading at the top, then the items of the menu (one item below the other), then 
+                        the content, and finally the footer at the bottom. It will be okay not to have  the meetup page in RWD<br>
+                    5. the layout of the front page needs to be using flexbox or CSS grid<br>
+                    6. the layout (position of the elements) should be something as (the colors for the background are your choice and the CONTENT represents everything
+                        you added to the homework1 html that was not the heading, links and menu.<br>
+                    7. you will add a contact page, where you will have a paragraph saying that whoever wants to contact you can use the information in the footer part of
+                        the page or they can fill out the form. the form you will build needs to have a field for a full name, another field for email address, and a text
+                        area for comments. the name and email are required. remember to adjust the link of the homework 1 html page to that of the new contact html page.
+                    8. in the footer area you will put some copyright information with your name and email address with a link that is related to the email.<br>
+                </p>           
+            </div>
+            
+            <!--content2 will hold the changes and the informaton that I have applied to the final project-->
+            <div class="content2" id="main">
+                
+                <h1 class="header1">This is where I will add the changes made from the the first webpage</h1>
+                
+                <!--this div is going to change to the new content or paragraph css-->
+                    <ul>
+                        <li>I have used CSS grids on this webpage to showcase my layout. I have used several of the grid as children and parents of elements in
+                            my html. The main content page is where I have a list of everything that needed to be done for my assignments. I have the main page
+                            itself in a grid and I have placed a child (the content) to also be in a grid style as well to make my layout more unique and to 
+                            test the skill an different operations for my web page and applying the skills I have to different areas of my webpage that I have 
+                            not tried before.
+                        </li>
+                    </ul>
+            </div>
+            
+            <div class="footer" id="foot">
+                John Anthony &copy; email: jantho14@ccsf.mail.edu<br>
+                <a href="contact.html" class="footer">Contact Me</a>
+            </div>
+        </div>
     </body>
 </html>

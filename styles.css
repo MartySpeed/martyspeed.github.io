@@ -1,0 +1,157 @@
+/*root pseudo class selector to set default html for the page using var for practice*/
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans'; 
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+/*body element*/
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+/*psuedo element for the scroll bar*/
+body::-webkit-scrollbar {
+width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+    background-image: #6649b8;
+}
+/*main element*/
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+/*setting up the navbar*/
+.navbar {
+    position: fixed; /*keeps the navbar in the same location no matter where the cliewnt scrolls on the screen*/
+    background-color: var(--bg-primary);
+    transition: width 600ms ease; /*imitates animation by using the transition like timed intervals.*/
+    overflow: scroll;
+}
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /*the default is a row, this also aligns items horizontally*/
+    align-items: center; /*aligns items in the middle of the content*/
+    height: 100%;
+}
+.nav-item {
+    width: 100%;
+}
+.nav-item:last-child {
+    margin-top: auto; /*this will make the margin as big as possible and push the last icon down to the bottom of the navbar.*/
+}
+.nav-link {
+    display: flex; /*default is a row*/
+    align-items: center; /*the nav-link runs rows so the alignment is vertical*/
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none; /*when hovering over the icon, icon texts appear*/
+    filter: grayscale(100%) opacity(0.7); /*setting the colors of the link when actice and inactive.*/
+    transition: var(--transition-speed);
+}
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+.link-text {
+    display: none; /*when not hovering over, the icon img shows only*/
+    margin-left: 1rem;
+}
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem; /*minmum width for the svg*/
+    margin: 0 1.5rem;
+}
+/*text illumination when you hover over the menu text*/
+.fa-primary {
+    color: orangered;
+}
+.fa-secondary {
+    color: mediumaquamarine;
+}
+/*transition for fa classes*/
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
+}
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom:  1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+.logo svg {
+    transform: rotate(0deg);
+    transition: 700ms ease; /*rotation animates whenever the transformation value changes.*/
+    
+}
+.logo-text {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+}
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
+    transition: 700ms ease;
+}
+/*Small screens*/
+/*media query allows to you to target certain ccs styles based on the screen size, orientation etc. */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .logo {
+        display: none;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+    main {
+        margin: 0;
+    }
+}
+/*Large screens*/
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem; /*rem is relative to the main elelement*/
+        height: 100vh; /*vh is relative to the size of the viewport 100 will always fill up the height and always fill the window with information.*/
+    }
+    .navbar:hover {
+        width: 16rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+    }
+    .navbar:hover .logo svg {
+        margin-left: 11rem;
+    }
+    .navbar:hover .logo-text
+    {
+        left: 0px;
+    }
+}
